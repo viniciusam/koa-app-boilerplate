@@ -1,0 +1,31 @@
+{
+  "name": "koa-app-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "babel src -d build",
+    "start": "nodemon -e js,json --exec babel-node src/server.js",
+    "test": "mocha --require babel-register ./test/**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.0.0-alpha.7",
+    "koa-bouncer": "^6.0.0",
+    "koa-compress": "^2.0.0",
+    "koa-router": "^7.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.0",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^2.0.1"
+  }
+}

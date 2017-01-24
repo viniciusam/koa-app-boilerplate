@@ -1,2 +1,2 @@
 # koa-app-boilerplate
-koa-app-boilerplate
+A simple Koa app boilerplate.

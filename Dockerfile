@@ -7,7 +7,7 @@ COPY .babelrc /root/app/.babelrc
 WORKDIR /root/app
 
 # Build Project
-RUN npm install --production \
+RUN npm install \
  && npm run build
 
 ENV NODE_ENV "production"
